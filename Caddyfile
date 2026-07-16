@@ -1,6 +1,6 @@
 set-op.w-ilyas.site {
 	encode gzip
-	root * /home/ubuntu/thinkering/set-op
+	root * /home/ubuntu/thinkering/set_operations
 	try_files {path} /index.html
 	file_server
 }
