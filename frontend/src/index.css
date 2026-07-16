@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --indigo: #4f46e5;
+  --indigo-hover: #4338ca;
+  --indigo-soft: #eef2ff;
+  --indigo-100: #e0e7ff;
+  --white: #ffffff;
+  --bg: #f6f7f9;
+  --g100: #f3f4f6;
+  --g200: #e5e7eb;
+  --g300: #d1d5db;
+  --g400: #9ca3af;
+  --g500: #6b7280;
+  --g700: #374151;
+  --g900: #111827;
+
+  --green: #059669;
+  --green-soft: #ecfdf5;
+  --red: #dc2626;
+  --red-soft: #fef2f2;
+  --amber: #d97706;
+  --amber-soft: #fffbeb;
+
+  --r-card: 20px;
+  --r-ctrl: 14px;
+  --r-pill: 999px;
+
+  --sh-card: 0 4px 16px rgba(17, 24, 39, 0.05);
+  --sh-hover: 0 8px 24px rgba(17, 24, 39, 0.09);
+  --sh-pop: 0 12px 32px rgba(79, 70, 229, 0.22);
+
+  --scrollbar-track: var(--g100);
+  --scrollbar-thumb: var(--g300);
+  --scrollbar-thumb-hover: var(--g400);
+
+  --font: "Segoe UI", system-ui, -apple-system, "Inter", sans-serif;
+}
+
+.dark {
+  --indigo: #6366f1;
+  --indigo-hover: #818cf8;
+  --indigo-soft: #1e1b4b;
+  --indigo-100: #312e81;
+  --white: #1c1f26;
+  --bg: #0f1115;
+  --g100: #252830;
+  --g200: #2e323c;
+  --g300: #3d424e;
+  --g400: #8b92a0;
+  --g500: #9ca3af;
+  --g700: #d1d5db;
+  --g900: #f3f4f6;
+
+  --green: #34d399;
+  --green-soft: #064e3b;
+  --red: #f87171;
+  --red-soft: #450a0a;
+  --amber: #fbbf24;
+  --amber-soft: #78350f;
+
+  --sh-card: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --sh-hover: 0 8px 24px rgba(0, 0, 0, 0.55);
+  --sh-pop: 0 12px 32px rgba(99, 102, 241, 0.35);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--g900);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: var(--r-pill);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: var(--r-pill);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
