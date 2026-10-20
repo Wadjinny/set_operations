@@ -1,7 +1,7 @@
 {
-  "name": "Template Website",
-  "short_name": "Website",
-  "description": "Example app built with React, Vite, Tailwind CSS, and React Router.",
+  "name": "Set Operations",
+  "short_name": "Set Ops",
+  "description": "Compute differences, intersections, and unions of sets.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
